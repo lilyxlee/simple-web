@@ -1,6 +1,3 @@
-/**
- * Created by 139044 on 21/02/18.
- */
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,7 +19,7 @@ public class Register extends HttpServlet {
             e.printStackTrace(System.out);
         }
         try {
-            con=DriverManager.getConnection("jdbc:hsqldb:mydatabase","SA","");
+            con=DriverManager.getConnection("jdbc:hsqldb:c:/dev/test/mydatabase","SA","");
             con.createStatement().executeUpdate("create table contacts (name varchar(45),email varchar(45),phone varchar(45))");
         } catch (SQLException e) {
             e.printStackTrace(System.out);

@@ -1,6 +1,3 @@
-/**
- * Created by 139044 on 21/02/18.
- */
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -23,7 +20,7 @@ public class ViewRecords extends HttpServlet {
             e.printStackTrace(System.out);
         }
         try {
-            con=DriverManager.getConnection("jdbc:hsqldb:mydatabase","SA","");
+            con=DriverManager.getConnection("jdbc:hsqldb:c:/dev/test/mydatabase","SA","");
         } catch (SQLException e) {
             e.printStackTrace(System.out);
         }
